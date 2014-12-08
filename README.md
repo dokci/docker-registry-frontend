@@ -12,10 +12,10 @@ This application is available in the form of a Docker image that you can run as 
     
     sudo docker run \
       -d \
-      -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
-      -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
-      -p 8080:80 \
-      konradkleine/docker-registry-frontend
+      -e ENV_DOCKER_REGISTRY_HOST=192.168.59.103 \
+      -e ENV_DOCKER_REGISTRY_PORT=2375 \
+      -p 7000:80 \
+      baseboxorg/docker-registry-frontend
 
 This command starts the container and forwards the container's private port `80` to your host's port `8080`. Make sure you specify the correct url to your registry.
 
